@@ -15,11 +15,8 @@ set_property(TARGET iterate PROPERTY C_STANDARD 99)
 target_include_directories(iterate PUBLIC ${CMAKE_SOURCE_DIR}/src)
 
 include_directories(${CMAKE_SOURCE_DIR}/src)
-swig_add_module(iterate python iterate.i)
+swig_add_library(iterate MODULE LANGUAGE python SOURCES iterate.i)
 swig_link_libraries(iterate iterate)
-if(APPLE)
-    swig_link_libraries(iterate "-undefined dynamic_lookup")
-endif()
 ###############################
 ###                         ###
 ###############################
