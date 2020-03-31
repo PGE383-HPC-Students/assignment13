@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/PGE383-HPC/assignment13.svg?token=SnMGq692xXXqxzyE6QSj&branch=master)](https://travis-ci.com/PGE383-HPC/assignment13)
 
-In [Assignment 12](https://github.com/PGE383-HPC-Fall2018/assignment12) we used [SWIG](www.swig.org) to generate Python "wrappers" to some C code to be called from a Python script that solves the Laplace equation in two dimensions.  If you recall, there were several manual steps which included calls to SWIG and a complicated compiler command to generate the compiled library.  Your task in this assignment is to use CMake to automate these steps.  Look at the file `CMakeLists.txt` in the `src` directory.  There are some comments that indicate where you should add CMake commands.
+In [Assignment 12](https://github.com/PGE383-HPC-Students/assignment12) we used [SWIG](www.swig.org) to generate Python "wrappers" to some C code to be called from a Python script that solves the Laplace equation in two dimensions.  If you recall, there were several manual steps which included calls to SWIG and a complicated compiler command to generate the compiled library.  Your task in this assignment is to use CMake to automate these steps.  Look at the file `CMakeLists.txt` in the `src` directory.  There are some comments that indicate where you should add CMake commands.
 
 **Tips**:
 
