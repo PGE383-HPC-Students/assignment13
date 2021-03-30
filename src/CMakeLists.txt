@@ -12,13 +12,7 @@ include(${SWIG_USE_FILE})
 ###############################
 ### Add CMake commands here ###
 ###############################
-add_library(iterate iterate.c)
-#set_property(TARGET iterate PROPERTY C_STANDARD 99)
-target_include_directories(iterate PUBLIC ${CMAKE_SOURCE_DIR}/src)
 
-include_directories(${CMAKE_SOURCE_DIR}/src)
-swig_add_library(_iterate TYPE MODULE LANGUAGE python SOURCES iterate.i)
-swig_link_libraries(_iterate iterate)
 ###############################
 ###                         ###
 ###############################
