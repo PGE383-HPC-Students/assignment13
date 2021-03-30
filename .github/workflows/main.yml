@@ -26,4 +26,5 @@ jobs:
       - name: Run Tests 
         shell: bash -l {0}
         run: |
+          cd build
           ctest
